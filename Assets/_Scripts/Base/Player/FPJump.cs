@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace LP.MobackTest.Base.Player
 {
-    public class FPSJump : MonoBehaviour
+    public class FPJump : MonoBehaviour
     {
         Rigidbody rb;
         [SerializeField] float jumpForce;
@@ -19,9 +19,12 @@ namespace LP.MobackTest.Base.Player
 
         void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Space) && IsOnGround())
+            if (StateManager.instance.PlayerState == StateManager.State.GamePlay)
             {
-                rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+                if (Input.GetKeyDown(KeyCode.Space) && IsOnGround())
+                {
+                    rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+                }
             }
         }
 
