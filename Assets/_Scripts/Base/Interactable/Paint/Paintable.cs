@@ -31,8 +31,11 @@ namespace LP.MobackTest.Base.Interactable.Paint
                             GameObject go = Instantiate(brush, hit.point + Vector3.forward * 0.1f, Quaternion.Euler(0, 0, -90), transform);
                             go.transform.localScale = Vector3.one * brushSize;
 
-                            GameObject go2 = Instantiate(brush, hit.point + Vector3.back, Quaternion.Euler(0, 180, -90), transform);
-                            go2.GetComponent<Material>().color = Invert(brushMaterial.color);
+
+                            // working on inverting to the other side NOT FINISHED
+
+                            //GameObject go2 = Instantiate(brush, hit.point + Vector3.back, Quaternion.Euler(0, 180, -90), transform);
+                            //go2.GetComponent<Material>().color = Invert(brushMaterial.color);
                         }
                     }
                 }

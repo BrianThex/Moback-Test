@@ -1088,6 +1088,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9add8e13b2cfc34184b4f49a38d3866, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  labelText: 
 --- !u!65 &154804421
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1101,6 +1102,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.402739, y: 0.38558203, z: 0.26}
   m_Center: {x: -3.1190675e-13, y: 0.000000007450581, z: -0.0003349074}
+--- !u!114 &154804422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154804414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6f293003dc6a414bb2849c6b823846f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brushCursor: {fileID: 2800000, guid: 03853a3048c7a2e4c885430c1be01714, type: 3}
+  brush: {fileID: 3369326273490334186, guid: 7c119b86873cabb4a9e1ffd9cab45f8c, type: 3}
+  brushMaterial: {fileID: 2100000, guid: 24e6f0f325ac35043ae6bf04729b266f, type: 2}
+  brushSize: 0.0025
+  facingClass: 0
 --- !u!1001 &157670133
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9241,6 +9259,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WhiteBoard
       objectReference: {fileID: 0}
+    - target: {fileID: 119432, guid: 9c10fd6da8b1fa04d9950b39504758d7, type: 3}
+      propertyPath: m_TagString
+      value: WhiteBoard
+      objectReference: {fileID: 0}
     - target: {fileID: 405774, guid: 9c10fd6da8b1fa04d9950b39504758d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.833
@@ -9770,7 +9792,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1904775482}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.087, z: -0}
+  m_LocalPosition: {x: 0, y: 0.1152, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 154804418}
